@@ -12,4 +12,10 @@
 ---
 
 3. Open the folder you just downloaded; it should be called **session-3-master**.
-4. ​
+4. Open the folder PrettyGoodPokedex**Starter**.
+5. Double-click the file **PrettyGoodPokedex.xcodeproj** to open the project in Xcode.
+
+## Designing the UITableViewController
+
+1. Using the **Project Navigator** on the left side of Xcode, open the Interface Builder by clicking on the **Main.storyboard** file.
+2. ​

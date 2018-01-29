@@ -13,18 +13,43 @@
         <scene sceneID="J6y-Fw-SR2">
             <objects>
                 <tableViewController id="9u6-by-NPc" customClass="PokemonTableViewController" customModule="PrettyGoodPokedex" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sh2-ck-EYI">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sh2-ck-EYI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CTa-SL-nTa">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokemonCell" id="CTa-SL-nTa" customClass="PokemonTableViewCell" customModule="PrettyGoodPokedex" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CTa-SL-nTa" id="Esk-zy-EjD">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="MKg-UB-hIP">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="gCl-fG-J9C"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5Y-hH-eN2">
+                                            <rect key="frame" x="60" y="15" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="MKg-UB-hIP" firstAttribute="top" secondItem="Esk-zy-EjD" secondAttribute="top" id="QBu-pw-Opx"/>
+                                        <constraint firstItem="s5Y-hH-eN2" firstAttribute="centerY" secondItem="Esk-zy-EjD" secondAttribute="centerY" id="XDK-Hq-oPa"/>
+                                        <constraint firstItem="MKg-UB-hIP" firstAttribute="leading" secondItem="Esk-zy-EjD" secondAttribute="leading" id="pNv-t9-ODe"/>
+                                        <constraint firstAttribute="bottom" secondItem="MKg-UB-hIP" secondAttribute="bottom" id="pfM-u3-jLH"/>
+                                        <constraint firstItem="s5Y-hH-eN2" firstAttribute="leading" secondItem="MKg-UB-hIP" secondAttribute="trailing" constant="10" id="vyY-Fl-NUY"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="s5Y-hH-eN2" id="XN4-Sq-Xbu"/>
+                                    <outlet property="pokemonImageView" destination="MKg-UB-hIP" id="Sny-kI-Y3Q"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,7 +60,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSc-SS-TwN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="206"/>
+            <point key="canvasLocation" x="328.80000000000001" y="205.54722638680661"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pokeball" width="512" height="512"/>
+    </resources>
 </document>

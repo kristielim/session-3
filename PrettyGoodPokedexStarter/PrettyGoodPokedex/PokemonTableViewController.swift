@@ -36,6 +36,28 @@ class PokemonTableViewController: UITableViewController {
         // TODO
         return UITableViewCell()
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // TODO
+    }
+    
+    // Helper Functions
+    
+    func loadImageFromURL(_ url: URL, into imageView: UIImageView!) {
+        // Move to a background thread to do some long running work
+        DispatchQueue.global(qos: .background).async {
+            do {
+                let imgData = try Data(contentsOf: url)
+                
+                // Bounce back to the main thread to update the UI
+                DispatchQueue.main.async {
+                    imageView.image = UIImage(data: imgData)
+                }
+            } catch {
+                print("Could not download image URL.")
+            }
+        }
+    }
 
 }
 

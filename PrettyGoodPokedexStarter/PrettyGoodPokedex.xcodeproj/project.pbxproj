@@ -16,6 +16,7 @@
 		445588F4201EC17400902519 /* PrettyGoodPokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445588F3201EC17400902519 /* PrettyGoodPokedexUITests.swift */; };
 		44558902201EC65300902519 /* JSONHelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44558901201EC65300902519 /* JSONHelperFunctions.swift */; };
 		44558906201F002F00902519 /* pokedex.json in Resources */ = {isa = PBXBuildFile; fileRef = 44558905201F002F00902519 /* pokedex.json */; };
+		44558908201F0F8E00902519 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44558907201F0F8E00902519 /* PokemonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		445588F5201EC17400902519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44558901201EC65300902519 /* JSONHelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelperFunctions.swift; sourceTree = "<group>"; };
 		44558905201F002F00902519 /* pokedex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokedex.json; sourceTree = "<group>"; };
+		44558907201F0F8E00902519 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				445588D3201EC17300902519 /* AppDelegate.swift */,
 				44558901201EC65300902519 /* JSONHelperFunctions.swift */,
 				445588D5201EC17300902519 /* PokemonTableViewController.swift */,
+				44558907201F0F8E00902519 /* PokemonTableViewCell.swift */,
 				445588D7201EC17300902519 /* Main.storyboard */,
 				445588DA201EC17300902519 /* Assets.xcassets */,
 				445588DC201EC17300902519 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				445588D6201EC17300902519 /* PokemonTableViewController.swift in Sources */,
+				44558908201F0F8E00902519 /* PokemonTableViewCell.swift in Sources */,
 				44558902201EC65300902519 /* JSONHelperFunctions.swift in Sources */,
 				445588D4201EC17300902519 /* AppDelegate.swift in Sources */,
 			);

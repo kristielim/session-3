@@ -24,17 +24,14 @@ class PokemonTableViewController: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // TODO
-        return 0
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // TODO
-        return 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // TODO
-        return UITableViewCell()
     }
 
 }

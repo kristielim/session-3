@@ -15,7 +15,7 @@
 		445588E9201EC17400902519 /* PrettyGoodPokedexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445588E8201EC17400902519 /* PrettyGoodPokedexTests.swift */; };
 		445588F4201EC17400902519 /* PrettyGoodPokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445588F3201EC17400902519 /* PrettyGoodPokedexUITests.swift */; };
 		44558902201EC65300902519 /* JSONHelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44558901201EC65300902519 /* JSONHelperFunctions.swift */; };
-		44558906201F002F00902519 /* pokedex.json in Resources */ = {isa = PBXBuildFile; fileRef = 44558905201F002F00902519 /* pokedex.json */; };
+		44558904201F001900902519 /* pokedex.json in Resources */ = {isa = PBXBuildFile; fileRef = 44558903201F001900902519 /* pokedex.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		445588F3201EC17400902519 /* PrettyGoodPokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyGoodPokedexUITests.swift; sourceTree = "<group>"; };
 		445588F5201EC17400902519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44558901201EC65300902519 /* JSONHelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelperFunctions.swift; sourceTree = "<group>"; };
-		44558905201F002F00902519 /* pokedex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokedex.json; sourceTree = "<group>"; };
+		44558903201F001900902519 /* pokedex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokedex.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 				445588D7201EC17300902519 /* Main.storyboard */,
 				445588DA201EC17300902519 /* Assets.xcassets */,
 				445588DC201EC17300902519 /* LaunchScreen.storyboard */,
+				44558903201F001900902519 /* pokedex.json */,
 				445588DF201EC17300902519 /* Info.plist */,
-				44558905201F002F00902519 /* pokedex.json */,
 			);
 			path = PrettyGoodPokedex;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44558906201F002F00902519 /* pokedex.json in Resources */,
+				44558904201F001900902519 /* pokedex.json in Resources */,
 				445588DE201EC17300902519 /* LaunchScreen.storyboard in Resources */,
 				445588DB201EC17300902519 /* Assets.xcassets in Resources */,
 				445588D9201EC17300902519 /* Main.storyboard in Resources */,

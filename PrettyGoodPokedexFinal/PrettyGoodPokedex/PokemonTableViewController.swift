@@ -64,12 +64,12 @@ class PokemonTableViewController: UITableViewController {
         let typeLabel = UILabel()
         typeLabel.text = "Type: " + pokemon.type
         typeLabel.sizeToFit()
-        typeLabel.center = CGPoint(x: newModalView.frame.width/2, y: newModalView.frame.height * 0.25)
+        typeLabel.center = CGPoint(x: newModalView.center.x, y: newModalView.frame.height * 0.25)
         
         let weightLabel = UILabel()
         weightLabel.text = "Weight: " + pokemon.weight
         weightLabel.sizeToFit()
-        weightLabel.center = CGPoint(x: newModalView.frame.width/2, y: newModalView.frame.height * 0.75)
+        weightLabel.center = CGPoint(x: newModalView.center.x, y: newModalView.frame.height * 0.75)
         
         let closeButton = UIButton()
         closeButton.setTitle("X", for: .normal)
@@ -82,7 +82,7 @@ class PokemonTableViewController: UITableViewController {
         newModalView.addSubview(closeButton)
         
         newModalView.alpha = 0
-        self.view.superview?.addSubview(newModalView)
+        self.tableView.superview?.addSubview(newModalView)
         
         modalView = newModalView
         

@@ -1,8 +1,23 @@
 # Hack Sprint Session 3 README
 
+## Table of Contents
+
+- Getting Started
+  - <a href="#1">Downloading the Code</a>
+- <a href="#2">Designing the UITableViewController</a>
+  - <a href="#3">Designing the Individual Cells</a>
+  - <a href="#4">Setting the Attributes and Constraints</a>
+  - <a href="#5">Linking the Image View and the Label </a>
+- Coding in Swift
+  - <a href="#6">Creating a Pokemon Class</a>
+  - <a href="#7">Configuring the UITableViewController</a>
+  - <a href="#8">Configuring the Cells</a>
+- <a href="#9">Bonus: Animating a Modal View</a>
+- <a href="#10">Challenge: Try to Group Pokemon in Sections by Type</a>
+
 ## Getting Started
 
-### Downloading the Code
+### <a id="1">Downloading the Code</a>
 
 1. We're going to provide some boilerplate code for this session's project. Navigate to this [GitHub repo](https://github.com/acm-hacksprint-w18/session-3).
 
@@ -27,7 +42,7 @@
 4. Open the folder PrettyGoodPokedex**Starter**.
 5. Double-click the file **PrettyGoodPokedex.xcodeproj** to open the project in Xcode.
 
-## Designing the UITableViewController
+## <a id="2">Designing the UITableViewController</a>
 
 1. Using the **Project Navigator** on the left side of Xcode, open the Interface Builder by clicking on the **Main.storyboard** file.
 2. Click on the **Table View** (i.e. the gray area, not the Prototype Cell). 
@@ -43,7 +58,7 @@
 
 ---
 
-### Designing the Individual Cells
+### <a id="3">Designing the Individual Cells</a>
 
 1. It may be helpful to zoom in, using pinch-drag, for this next part.
 2. In the bottom right of the screen, ensuring that the third tab is selected, scroll until you find the **Image View** element.
@@ -70,7 +85,7 @@
 
 ---
 
-### Setting Attributes and Constraints
+### <a id="4">Setting Attributes and Constraints</a>
 
 1. Select the **Image View** again.
 2. On the right side of the screen, open the **Attributes Inspector** by clicking on the icon to the left of the ruler icon.
@@ -98,7 +113,7 @@
 
 ---
 
-### Linking the Image View and Label
+### <a id="5">Linking the Image View and Label</a>
 
 We're going to add IBOutlets manually without the use of the Assistant editor.
 
@@ -136,7 +151,7 @@ We're all set to begin coding!
 
 ## Coding in Swift
 
-### Creating a Pokemon Class
+### <a id="6">Creating a Pokemon Class</a>
 
 We're going to create a custom Pokemon class that encapsulates all of the data that we need to know about a Pokemon.
 
@@ -179,7 +194,7 @@ We're going to create a custom Pokemon class that encapsulates all of the data t
 
 **Checkpoint**: You should now be able to build and run your app. You won't see any cells though; let's add those next!
 
-## Configuring the UITableViewController
+### <a id="7">Configuring the UITableViewController</a>
 
 1. Return to the Project Navigator and click on the **PokemonTableViewController.swift** file.
 
@@ -211,7 +226,7 @@ We're going to create a custom Pokemon class that encapsulates all of the data t
    }
    ```
 
-### Configuring the Cells
+### <a id="8">Configuring the Cells</a>
 
 Now for the most complex function regarding UITableViews. The `tableView(_:cellForRowAt:)` function returns the UITableViewCell object that should be shown at a given row:
 
@@ -248,7 +263,7 @@ Now for the most complex function regarding UITableViews. The `tableView(_:cellF
 
 **Checkpoint**: Build and run your app to see all of the Pokemon!
 
-## Animating a Modal View
+## <a id="9">Animating a Modal View</a>
 
 1. Declare a new property just underneath `pokemonArray`:
 
@@ -353,3 +368,6 @@ var modalView: UIView? = nil
     }
 ```
 
+## <a id="10">Challenge: Try to Group Pokemon in Sections by Type</a>
+
+do it to win a prize woohoo

@@ -43,6 +43,9 @@ class PokemonTableViewController: UITableViewController {
     
     // Helper Functions
     
+    // This method sets the image in a particular image view from a particular image 
+    // URL. It loads and sets the image while running in the background to make the 
+    // changes look more smooth to the user.
     func loadImageFromURL(_ url: URL, into imageView: UIImageView!) {
         // Move to a background thread to do some long running work
         DispatchQueue.global(qos: .background).async {

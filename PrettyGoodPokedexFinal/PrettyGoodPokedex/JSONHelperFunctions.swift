@@ -8,6 +8,12 @@
 
 import Foundation
 
+// This method opens the file "pokedex.json" and reads the data as binary data (NSData) first. 
+// In the "do" block, it converts the raw binary data into a JSON array object. A JSON object is 
+// of type "Any", so an array of "Any" is returned ("[Any]"). If there is an error in the parsing,
+// the error is recognized in the "catch" block, and the error message is printed out.
+// Note: see pokedex.json to see what JSON syntax looks like. JSON is just a way to represent something
+// in plain text data.
 fileprivate func getJSON() -> [Any] {
     if let filePath = Bundle.main.path(forResource:"pokedex", ofType:"json") {
         if let data = NSData(contentsOfFile: filePath) {
@@ -24,6 +30,8 @@ fileprivate func getJSON() -> [Any] {
     return []
 }
 
+// This method gets a JSON array of pokemon data and converts each JSON object 
+// into an actual Pokemon object as defined in Pokemon.swift.
 func getPokemon() -> [Pokemon] {
     
     let data = getJSON()

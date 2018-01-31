@@ -250,11 +250,3 @@ Now for the most complex function regarding UITableViews. The `tableView(_:cellF
 
 ## Animating a Modal View
 
-1. Declare a new property `modalView` just underneath the `pokemonArray` property:
-
-   ```
-   var modalView: UIView? = nil
-   ```
-
-2. ​
-

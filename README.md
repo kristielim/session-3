@@ -242,6 +242,7 @@ Now for the most complex function regarding UITableViews. The `tableView(_:cellF
 5. Return to **PokemonTableViewController** via the Project Navigator.
 
 6. Replace `tableView(_:cellForRowAt:)` with the following code:
+Note: `tableView(_:cellForRowAt:)` means the function tableView that has the parameters `_` and `cellForRowAt`. The code that you want to replace will look a lot like below, except that there isn't anything in the body. 
 
    ```
    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

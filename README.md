@@ -184,12 +184,12 @@ We're going to create a custom Pokemon class that encapsulates all of the data t
 5. Add an initializer inside Pokemon class, below all of the properties we just declared:
 
    ```
-   init(name: String, imageURL: URL, type: String, weight: String) {
-           self.name = name
-           self.imageURL = URL(string: imageURL)!
-           self.type = type
-           self.weight = weight
-   }
+   init(name: String, imageURL: String, type: String, weight: String) {
+        self.name = name
+        self.imageURL = URL(string: imageURL)!
+        self.type = type
+        self.weight = weight
+    }
    ```
 
 **Checkpoint**: You should now be able to build and run your app. You won't see any cells though; let's add those next!
